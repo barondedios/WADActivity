@@ -15,11 +15,11 @@
             <li>
                 <strong>{{ $profile->user->name }}</strong><br>
                 Email: {{ $profile->user->email }}<br>
-                Profile Bio: {{ $profile->bio }}  <!-- Assuming the Profile model has a bio attribute -->
+                Profile Bio: {{ $profile->bio }}  
                 
             </li>
         @endforeach
     </ul>
 
-</body>
+</body> 
 </html>

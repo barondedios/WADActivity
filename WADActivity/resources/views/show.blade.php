@@ -12,7 +12,7 @@
 
     <h1>{{ $profile->user->name }}'s Profile</h1>
     <p>Email: {{ $profile->user->name }}</p>
-    <p>Profile Bio: {{ $profile->bio }}</p> <!-- Assuming 'bio' is a field in the Profile model -->
+    <p>Profile Bio: {{ $profile->bio }}</p> 
 
 </body>
 </html>

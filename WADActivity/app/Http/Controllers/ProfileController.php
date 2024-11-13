@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Profile;
+use App\Models\User;
 
 class ProfileController extends Controller
 {
@@ -13,8 +14,7 @@ class ProfileController extends Controller
         return view('index', ['profiles' => $profiles]);
     }
     
-    public function showUser($profileId){
-        $profile = Profile::with('user')->findOrFail($profileId);
-        return view ('show', ['profile' => $profile]);
-    }
+    
+
+  
 }

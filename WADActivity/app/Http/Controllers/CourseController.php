@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class CourseController extends Controller
 {
     // Method to show all users for a specific course
-    public function showUsers($courseId)
+    public function showCourseUsers($courseId)
     {
         // Find the course by ID, or fail if not found
         $course = Course::findOrFail($courseId);
