@@ -31,11 +31,11 @@ class UserController extends Controller
 
     public function users($courseId)
     {
-        $courses = Course::with('users')->findOrFail($courseId);  // eager load users
+        $course = Course::with('users')->findOrFail($courseId);  // eager load users
 
-        $user = $courses->user;
+        $user = $course->user;
 
-        return view('courses', ['course' => $courses, 'user' => $user]);
+        return view('courses', ['course' => $course, 'user' => $user]);
         
     }
 }
