@@ -11,13 +11,13 @@
     <div class="container">
         {{-- <h1>Courses for {{ $user->name }}</h1> --}}
         
-    <h2> Courses {{$course->user}}</h2>
+    <h2> Courses </h2>
         
-        
-        <h3>Course: </h3>{{ $course->name }} 
-        <h3>Course Description: </h3>{{ $course->description }}
-
-        
+        @foreach($course->users as $user)
+            <h2>Name:{{ $user->name }} Email:({{ $user->email }})</h2>
+            <h3>Course: </h3>{{ $course->name }} 
+            <h3>Course Description: </h3>{{ $course->description }}
+        @endforeach
 
        
     </div>

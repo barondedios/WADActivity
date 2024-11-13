@@ -11,10 +11,10 @@ Route::get('/', function () {
 });
 
 
-Route::get('/profiles', [ProfileController::class, 'index']);  // Show all profiles
-Route::get('/profile/{id}', [UserController::class, 'showUser']); //Show a user profile
-Route::get('/user/{id}/courses', [UserController::class, 'users']);  // Show courses of a user
-Route::get('courses/course/users', [CourseController::class, 'showCourseUsers']);
+Route::get('/profiles', [ProfileController::class, 'index']);  // Show all profiles, http://127.0.0.1:8000/profiles
+Route::get('/profile/{id}', [UserController::class, 'showUser']); //Show a user profile, http://127.0.0.1:8000/profile/1
+Route::get('/user/{id}/courses', [UserController::class, 'users']);  // Show courses of a user, http://127.0.0.1:8000/user/1/courses
+Route::get('/course/{id}/users', [CourseController::class, 'users']);
 
 
 
