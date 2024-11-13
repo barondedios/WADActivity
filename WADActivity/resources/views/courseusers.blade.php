@@ -11,7 +11,7 @@
     <div class="container">
         {{-- <h1>Courses for {{ $user->name }}</h1> --}}
         
-    <h2> Courses </h2>
+    <h2> Course: {{ $course->name}} at Users nito: </h2>
         
         @foreach($course->users as $user)
             <h2>Name:{{ $user->name }} Email:({{ $user->email }})</h2>
